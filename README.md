@@ -1,2 +1,2 @@
-# glass-effect
-ui with html, css, js
+https://heavycavalry.github.io/glass-effect/
+UI list in html, css, js
