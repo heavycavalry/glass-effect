@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 100%;
+    height: 100vh;
+}
+@media (max-width: 900px) {
+    html {font-size: 80%;}
+}
+
+body {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle-one {
+    left: 20px;
+    top: 50px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.circle-two {
+    right: 50px;
+    bottom: 150px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+
+.glass-card {
+    margin: 1rem;
+    height: auto;
+    padding: 1rem;
+    width:50%;
+    min-width:300px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-item {
+display: flex;
+align-items: center;
+width: 90%;
+margin: 0.5rem;
+background-color: rgba(0, 0, 0, 0.129);
+border-radius: 10px;
+cursor: pointer;
+}
+
+.card-item:hover {
+    left: -20px;
+    background-image: linear-gradient(to right, #f83600 0%, #453a94 100%);
+}
+
+.card-item-img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.card-item-title {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.card-item-body {
+    color: rgba(255, 255, 255, 0.68);
+}
